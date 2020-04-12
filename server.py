@@ -5,10 +5,6 @@ from twilio.twiml.messaging_response import MessagingResponse
 app = Flask(__name__)
 
 
-TWILIO_ACCOUNT_SID = 'ACc754659707d39261741ad03a1ac4291e'
-TWILIO_AUTH_TOKEN = '38093a8480530daf81256bfabf950be6'
-
-
 @app.route("/sms", methods=['GET', 'POST'])
 def sms_ahoy_reply():
     """Respond to incoming messages with a friendly SMS."""
